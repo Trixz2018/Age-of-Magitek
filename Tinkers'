@@ -1,0 +1,53 @@
+print("TConstruct");
+
+// Tool Forge Recipe
+recipes.remove(<tconstruct:toolforge>);
+recipes.addShaped(<tconstruct:toolforge>.withTag({textureBlock: {id:"minecraft:iron_block", Count: 1 as byte, Damage: 0 as short}}), [[<ore:blockSeared>, <ore:blockSeared>, <ore:blockSeared>], [<ore:plateDenseSteel>, <tconstruct:tooltables:3>, <ore:plateDenseSteel>], [<ore:plateDenseSteel>, null, <ore:plateDenseSteel>]]);
+
+// Change Silky Jewel
+recipes.remove(<tconstruct:materials:16>);
+recipes.addShaped(<tconstruct:materials:16>, [[null, <tconstruct:materials:15>, null] ,[<tconstruct:materials:15>, <ore:blockEmerald>, <tconstruct:materials:15>], [null, <tconstruct:materials:15>, null]]);
+
+// Remove Melting of Bucket
+mods.tconstruct.Melting.removeRecipe(<liquid:iron>, <minecraft:bucket>);
+
+// Change Obsidian Alloy
+mods.tconstruct.Alloy.removeRecipe(<liquid:obsidian>);
+mods.tconstruct.Alloy.addRecipe(<liquid:obsidian> * 36, [<liquid:water> * 250, <liquid:lava> * 250]);
+
+// 2 Ingots per Plate Fix (TConstruct)
+mods.tconstruct.Casting.removeTableRecipe(<ic2:plate>);
+mods.tconstruct.Casting.removeTableRecipe(<ic2:plate:1>);
+mods.tconstruct.Casting.removeTableRecipe(<ic2:plate:2>);
+mods.tconstruct.Casting.removeTableRecipe(<ic2:plate:3>);
+mods.tconstruct.Casting.removeTableRecipe(<ic2:plate:5>);
+mods.tconstruct.Casting.removeTableRecipe(<ic2:plate:7>);
+mods.tconstruct.Casting.removeTableRecipe(<ic2:plate:8>);
+mods.tconstruct.Casting.removeTableRecipe(<immersiveengineering:metal:30>);
+mods.tconstruct.Casting.removeTableRecipe(<immersiveengineering:metal:31>);
+mods.tconstruct.Casting.removeTableRecipe(<immersiveengineering:metal:32>);
+mods.tconstruct.Casting.removeTableRecipe(<immersiveengineering:metal:35>);
+mods.tconstruct.Casting.removeTableRecipe(<immersiveengineering:metal:36>);
+mods.tconstruct.Casting.removeTableRecipe(<immersiveengineering:metal:37>);
+mods.tconstruct.Casting.removeTableRecipe(<immersiveengineering:metal:38>);
+mods.tconstruct.Casting.removeTableRecipe(<immersiveengineering:metal:39>);
+mods.tconstruct.Casting.removeTableRecipe(<techreborn:plates:25>);
+mods.tconstruct.Casting.removeTableRecipe(<techreborn:plates:27>);
+mods.tconstruct.Casting.removeTableRecipe(<thermalfoundation:material:24>);
+mods.tconstruct.Casting.removeTableRecipe(<thermalfoundation:material:293>);
+mods.tconstruct.Casting.removeTableRecipe(<thermalfoundation:material:291>);
+mods.tconstruct.Casting.removeTableRecipe(<thermalfoundation:material:259>);
+mods.tconstruct.Casting.removeTableRecipe(<thermalfoundation:material:290>);
+mods.tconstruct.Casting.removeTableRecipe(<thermalfoundation:material:25>);
+mods.tconstruct.Casting.removeTableRecipe(<thermalfoundation:material:256>);
+mods.tconstruct.Casting.removeTableRecipe(<thermalfoundation:material:257>);
+mods.tconstruct.Casting.removeTableRecipe(<thermalfoundation:material:258>);
+mods.tconstruct.Casting.removeTableRecipe(<thermalfoundation:material:295>);
+mods.tconstruct.Casting.removeTableRecipe(<thermalfoundation:material:289>);
+mods.tconstruct.Casting.removeTableRecipe(<thermalfoundation:material:294>);
+mods.tconstruct.Casting.removeTableRecipe(<thermalfoundation:material:261>);
+mods.tconstruct.Casting.removeTableRecipe(<thermalfoundation:material:292>);
+
+// Cobalt Chisel Fix
+mods.tconstruct.Casting.removeBasinRecipe(<chisel:blockcobalt>, <liquid:cobalt>);
+mods.tconstruct.Casting.addBasinRecipe(<tconstruct:metal>, null, <liquid:cobalt>, 1296);
