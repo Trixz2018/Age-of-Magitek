@@ -1,0 +1,142 @@
+print("Mekanism");
+
+// Jetpack
+recipes.remove(<mekanism:jetpack>);
+recipes.addShaped(<mekanism:jetpack>, [[<ore:ingotSteel>, <ore:circuitBasic>, <ore:ingotSteel>], [<ore:ingotTin>, <mekanism:gastank>, <ore:ingotTin>], [null, <ic2:jetpack:*>, null]]);
+
+// Steel Casing
+recipes.remove(<mekanism:basicblock:8>);
+recipes.addShaped(<mekanism:basicblock:8>, [[<thermalfoundation:material:352>, <ore:plateTitanium>, <thermalfoundation:material:352>], [<ore:plateTitanium>, <ore:blockOsmium>, <ore:plateTitanium>], [<thermalfoundation:material:352>, <ore:plateTitanium>, <thermalfoundation:material:352>]]);
+<mekanism:basicblock:8>.addTooltip(format.red("(* triggers Age 12)"));
+
+// Heat Generator
+recipes.remove(<mekanismgenerators:generator>);
+recipes.addShaped(<mekanismgenerators:generator>, [[<ore:ingotSteel>, <ore:ingotSteel>, <ore:ingotSteel>], [<ore:ingotOsmium>, <mekanism:basicblock:8>, <ore:ingotOsmium>], [<ore:ingotOsmium>, <minecraft:furnace>, <ore:ingotOsmium>]]);
+
+// Metallurgic Infuser
+recipes.remove(<mekanism:machineblock:8>);
+recipes.addShaped(<mekanism:machineblock:8>, [[<ore:ingotSteel>, <minecraft:furnace>, <ore:ingotSteel>], [<minecraft:redstone>, <mekanism:basicblock:8>, <minecraft:redstone>], [<ore:ingotSteel>, <minecraft:furnace>, <ore:ingotSteel>]]);
+
+// Basic Factories
+recipes.remove(<mekanism:machineblock:5>);
+recipes.addShaped(<mekanism:machineblock:5>.withTag({recipeType: 0}), [[<minecraft:redstone>, <ore:circuitBasic>, <minecraft:redstone>], [<ore:ingotChrome>, <mekanism:machineblock:10>, <ore:ingotChrome>], [<minecraft:redstone>, <ore:circuitBasic>, <minecraft:redstone>]]);
+recipes.addShaped(<mekanism:machineblock:5>.withTag({recipeType: 1}), [[<minecraft:redstone>, <ore:circuitBasic>, <minecraft:redstone>], [<ore:ingotChrome>, <mekanism:machineblock>, <ore:ingotChrome>], [<minecraft:redstone>, <ore:circuitBasic>, <minecraft:redstone>]]);
+recipes.addShaped(<mekanism:machineblock:5>.withTag({recipeType: 2}), [[<minecraft:redstone>, <ore:circuitBasic>, <minecraft:redstone>], [<ore:ingotChrome>, <mekanism:machineblock:3>, <ore:ingotChrome>], [<minecraft:redstone>, <ore:circuitBasic>, <minecraft:redstone>]]);
+recipes.addShaped(<mekanism:machineblock:5>.withTag({recipeType: 3}), [[<minecraft:redstone>, <ore:circuitBasic>, <minecraft:redstone>], [<ore:ingotChrome>, <mekanism:machineblock:1>, <ore:ingotChrome>], [<minecraft:redstone>, <ore:circuitBasic>, <minecraft:redstone>]]);
+recipes.addShaped(<mekanism:machineblock:5>.withTag({recipeType: 4}), [[<minecraft:redstone>, <ore:circuitBasic>, <minecraft:redstone>], [<ore:ingotChrome>, <mekanism:machineblock:2>, <ore:ingotChrome>], [<minecraft:redstone>, <ore:circuitBasic>, <minecraft:redstone>]]);
+recipes.addShaped(<mekanism:machineblock:5>.withTag({recipeType: 5}), [[<minecraft:redstone>, <ore:circuitBasic>, <minecraft:redstone>], [<ore:ingotChrome>, <mekanism:machineblock:9>, <ore:ingotChrome>], [<minecraft:redstone>, <ore:circuitBasic>, <minecraft:redstone>]]);
+recipes.addShaped(<mekanism:machineblock:5>.withTag({recipeType: 6}), [[<minecraft:redstone>, <ore:circuitBasic>, <minecraft:redstone>], [<ore:ingotChrome>, <mekanism:machineblock:3>, <ore:ingotChrome>], [<minecraft:redstone>, <ore:circuitBasic>, <minecraft:redstone>]]);
+recipes.addShaped(<mekanism:machineblock:5>.withTag({recipeType: 7}), [[<minecraft:redstone>, <ore:circuitBasic>, <minecraft:redstone>], [<ore:ingotChrome>, <mekanism:machineblock:8>, <ore:ingotChrome>], [<minecraft:redstone>, <ore:circuitBasic>, <minecraft:redstone>]]);
+recipes.remove(<mekanism:tierinstaller>);
+recipes.addShaped(<mekanism:tierinstaller>, [[<minecraft:redstone>, <ore:circuitBasic>, <minecraft:redstone>], [<ore:ingotChrome>, <ore:plankWood>, <ore:ingotChrome>], [<minecraft:redstone>, <ore:circuitBasic>, <minecraft:redstone>]]);
+
+// Advanced Factories
+recipes.remove(<mekanism:machineblock:6>);
+recipes.addShaped(<mekanism:machineblock:6>.withTag({recipeType: 0}), [[<mekanism:enrichedalloy>, <ore:circuitAdvanced>, <mekanism:enrichedalloy>], [<ore:ingotIridium>, <mekanism:machineblock:5>.withTag({recipeType: 0}).onlyWithTag({recipeType: 0}), <ore:ingotIridium>], [<mekanism:enrichedalloy>, <ore:circuitAdvanced>, <mekanism:enrichedalloy>]]);
+recipes.addShaped(<mekanism:machineblock:6>.withTag({recipeType: 1}), [[<mekanism:enrichedalloy>, <ore:circuitAdvanced>, <mekanism:enrichedalloy>], [<ore:ingotIridium>, <mekanism:machineblock:5>.withTag({recipeType: 1}).onlyWithTag({recipeType: 1}), <ore:ingotIridium>], [<mekanism:enrichedalloy>, <ore:circuitAdvanced>, <mekanism:enrichedalloy>]]);
+recipes.addShaped(<mekanism:machineblock:6>.withTag({recipeType: 2}), [[<mekanism:enrichedalloy>, <ore:circuitAdvanced>, <mekanism:enrichedalloy>], [<ore:ingotIridium>, <mekanism:machineblock:5>.withTag({recipeType: 2}).onlyWithTag({recipeType: 2}), <ore:ingotIridium>], [<mekanism:enrichedalloy>, <ore:circuitAdvanced>, <mekanism:enrichedalloy>]]);
+recipes.addShaped(<mekanism:machineblock:6>.withTag({recipeType: 3}), [[<mekanism:enrichedalloy>, <ore:circuitAdvanced>, <mekanism:enrichedalloy>], [<ore:ingotIridium>, <mekanism:machineblock:5>.withTag({recipeType: 3}).onlyWithTag({recipeType: 3}), <ore:ingotIridium>], [<mekanism:enrichedalloy>, <ore:circuitAdvanced>, <mekanism:enrichedalloy>]]);
+recipes.addShaped(<mekanism:machineblock:6>.withTag({recipeType: 4}), [[<mekanism:enrichedalloy>, <ore:circuitAdvanced>, <mekanism:enrichedalloy>], [<ore:ingotIridium>, <mekanism:machineblock:5>.withTag({recipeType: 4}).onlyWithTag({recipeType: 4}), <ore:ingotIridium>], [<mekanism:enrichedalloy>, <ore:circuitAdvanced>, <mekanism:enrichedalloy>]]);
+recipes.addShaped(<mekanism:machineblock:6>.withTag({recipeType: 5}), [[<mekanism:enrichedalloy>, <ore:circuitAdvanced>, <mekanism:enrichedalloy>], [<ore:ingotIridium>, <mekanism:machineblock:5>.withTag({recipeType: 5}).onlyWithTag({recipeType: 5}), <ore:ingotIridium>], [<mekanism:enrichedalloy>, <ore:circuitAdvanced>, <mekanism:enrichedalloy>]]);
+recipes.addShaped(<mekanism:machineblock:6>.withTag({recipeType: 6}), [[<mekanism:enrichedalloy>, <ore:circuitAdvanced>, <mekanism:enrichedalloy>], [<ore:ingotIridium>, <mekanism:machineblock:5>.withTag({recipeType: 6}).onlyWithTag({recipeType: 6}), <ore:ingotIridium>], [<mekanism:enrichedalloy>, <ore:circuitAdvanced>, <mekanism:enrichedalloy>]]);
+recipes.addShaped(<mekanism:machineblock:6>.withTag({recipeType: 7}), [[<mekanism:enrichedalloy>, <ore:circuitAdvanced>, <mekanism:enrichedalloy>], [<ore:ingotIridium>, <mekanism:machineblock:5>.withTag({recipeType: 7}).onlyWithTag({recipeType: 7}), <ore:ingotIridium>], [<mekanism:enrichedalloy>, <ore:circuitAdvanced>, <mekanism:enrichedalloy>]]);
+recipes.remove(<mekanism:tierinstaller:1>);
+recipes.addShaped(<mekanism:tierinstaller:1>, [[<mekanism:enrichedalloy>, <ore:circuitAdvanced>, <mekanism:enrichedalloy>], [<ore:ingotIridium>, <ore:plankWood>, <ore:ingotIridium>], [<mekanism:enrichedalloy>, <ore:circuitAdvanced>, <mekanism:enrichedalloy>]]);
+
+// Elite Factories
+recipes.remove(<mekanism:machineblock:7>);
+recipes.addShaped(<mekanism:machineblock:7>.withTag({recipeType: 0}), [[<mekanism:reinforcedalloy>, <ore:circuitElite>, <mekanism:reinforcedalloy>], [<ore:ingotTungstensteel>, <mekanism:machineblock:6>.withTag({recipeType: 0}).onlyWithTag({recipeType: 0}), <ore:ingotTungstensteel>], [<mekanism:reinforcedalloy>, <ore:circuitElite>, <mekanism:reinforcedalloy>]]);
+recipes.addShaped(<mekanism:machineblock:7>.withTag({recipeType: 1}), [[<mekanism:reinforcedalloy>, <ore:circuitElite>, <mekanism:reinforcedalloy>], [<ore:ingotTungstensteel>, <mekanism:machineblock:6>.withTag({recipeType: 1}).onlyWithTag({recipeType: 1}), <ore:ingotTungstensteel>], [<mekanism:reinforcedalloy>, <ore:circuitElite>, <mekanism:reinforcedalloy>]]);
+recipes.addShaped(<mekanism:machineblock:7>.withTag({recipeType: 2}), [[<mekanism:reinforcedalloy>, <ore:circuitElite>, <mekanism:reinforcedalloy>], [<ore:ingotTungstensteel>, <mekanism:machineblock:6>.withTag({recipeType: 2}).onlyWithTag({recipeType: 2}), <ore:ingotTungstensteel>], [<mekanism:reinforcedalloy>, <ore:circuitElite>, <mekanism:reinforcedalloy>]]);
+recipes.addShaped(<mekanism:machineblock:7>.withTag({recipeType: 3}), [[<mekanism:reinforcedalloy>, <ore:circuitElite>, <mekanism:reinforcedalloy>], [<ore:ingotTungstensteel>, <mekanism:machineblock:6>.withTag({recipeType: 3}).onlyWithTag({recipeType: 3}), <ore:ingotTungstensteel>], [<mekanism:reinforcedalloy>, <ore:circuitElite>, <mekanism:reinforcedalloy>]]);
+recipes.addShaped(<mekanism:machineblock:7>.withTag({recipeType: 4}), [[<mekanism:reinforcedalloy>, <ore:circuitElite>, <mekanism:reinforcedalloy>], [<ore:ingotTungstensteel>, <mekanism:machineblock:6>.withTag({recipeType: 4}).onlyWithTag({recipeType: 4}), <ore:ingotTungstensteel>], [<mekanism:reinforcedalloy>, <ore:circuitElite>, <mekanism:reinforcedalloy>]]);
+recipes.addShaped(<mekanism:machineblock:7>.withTag({recipeType: 5}), [[<mekanism:reinforcedalloy>, <ore:circuitElite>, <mekanism:reinforcedalloy>], [<ore:ingotTungstensteel>, <mekanism:machineblock:6>.withTag({recipeType: 5}).onlyWithTag({recipeType: 5}), <ore:ingotTungstensteel>], [<mekanism:reinforcedalloy>, <ore:circuitElite>, <mekanism:reinforcedalloy>]]);
+recipes.addShaped(<mekanism:machineblock:7>.withTag({recipeType: 6}), [[<mekanism:reinforcedalloy>, <ore:circuitElite>, <mekanism:reinforcedalloy>], [<ore:ingotTungstensteel>, <mekanism:machineblock:6>.withTag({recipeType: 6}).onlyWithTag({recipeType: 6}), <ore:ingotTungstensteel>], [<mekanism:reinforcedalloy>, <ore:circuitElite>, <mekanism:reinforcedalloy>]]);
+recipes.addShaped(<mekanism:machineblock:7>.withTag({recipeType: 7}), [[<mekanism:reinforcedalloy>, <ore:circuitElite>, <mekanism:reinforcedalloy>], [<ore:ingotTungstensteel>, <mekanism:machineblock:6>.withTag({recipeType: 7}).onlyWithTag({recipeType: 7}), <ore:ingotTungstensteel>], [<mekanism:reinforcedalloy>, <ore:circuitElite>, <mekanism:reinforcedalloy>]]);
+recipes.remove(<mekanism:tierinstaller:2>);
+recipes.addShaped(<mekanism:tierinstaller:2>, [[<mekanism:reinforcedalloy>, <ore:circuitElite>, <mekanism:reinforcedalloy>], [<ore:ingotTungstensteel>, <ore:plankWood>, <ore:ingotTungstensteel>], [<mekanism:reinforcedalloy>, <ore:circuitElite>, <mekanism:reinforcedalloy>]]);
+
+// Energy Tablet
+recipes.remove(<mekanism:energytablet>);
+recipes.addShaped(<mekanism:energytablet>, [[<mekanism:enrichedalloy>, <ic2:re_battery:*>, <mekanism:enrichedalloy>], [<ore:dustCadmium>, <calculator:energymodule>, <ore:dustCadmium>], [<mekanism:enrichedalloy>, <actuallyadditions:item_battery>, <mekanism:enrichedalloy>]]);
+
+// Wind Turbine
+recipes.remove(<mekanismgenerators:generator:6>);
+recipes.addShaped(<mekanismgenerators:generator:6>, [[null, <ore:ingotOsmium>, null], [<ore:ingotOsmium>, <ic2:rotor_steel>, <ore:ingotOsmium>], [<mekanism:energytablet>, <ic2:te:5>, <mekanism:energytablet>]]);
+
+//Solar Generators
+recipes.remove(<mekanismgenerators:solarpanel>);
+recipes.addShaped(<mekanismgenerators:solarpanel>, [[<solarfluxreborn:solarcell1>, <solarfluxreborn:solarcell1>, <solarfluxreborn:solarcell1>], [<mekanism:enrichedalloy>, <mekanism:enrichedalloy>, <mekanism:enrichedalloy>], [<ore:plateCadmium>, <ore:plateCadmium>, <ore:plateCadmium>]]);
+recipes.remove(<mekanismgenerators:generator:1>);
+recipes.addShaped(<mekanismgenerators:generator:1>, [[<mekanismgenerators:solarpanel>, <mekanismgenerators:solarpanel>, <mekanismgenerators:solarpanel>], [<mekanism:enrichedalloy>, <actuallyadditions:block_crystal_empowered:3>, <mekanism:enrichedalloy>], [<mekanism:energytablet>, <ore:blockSteel>, <mekanism:energytablet>]]);
+recipes.remove(<mekanismgenerators:generator:5>);
+recipes.addShaped(<mekanismgenerators:generator:5>, [[<mekanismgenerators:generator:1>, <mekanism:controlcircuit:3>, <mekanismgenerators:generator:1>], [<mekanismgenerators:generator:1>, <mekanism:controlcircuit:3>, <mekanismgenerators:generator:1>], [<ore:ingotPlatinum>, <ore:ingotPlatinum>, <ore:ingotPlatinum>]]);
+
+// Bio Generator
+recipes.remove(<mekanismgenerators:generator:4>);
+recipes.addShaped(<mekanismgenerators:generator:4>, [[<mekanism:enrichedalloy>, <mekanism:enrichedalloy>, <mekanism:enrichedalloy>], [<mekanism:biofuel>, <mekanism:basicblock:8>, <mekanism:biofuel>], [<ore:ingotOsmium>, <actuallyadditions:block_bio_reactor>, <ore:ingotOsmium>]]);
+
+// Gas Burning Generator
+recipes.remove(<mekanismgenerators:generator:3>);
+recipes.addShaped(<mekanismgenerators:generator:3>, [[<ore:ingotOsmium>, <mekanism:enrichedalloy>, <ore:ingotOsmium>], [<mekanism:basicblock:8>, <mekanism:electrolyticcore>, <mekanism:basicblock:8>], [<techreborn:gas_turbine>, <forestry:engine_biogas>, <advgenerators:turbine_controller>]]);
+
+// Electrolytic Core
+recipes.remove(<mekanism:electrolyticcore>);
+recipes.addShaped(<mekanism:electrolyticcore>, [[<mekanism:enrichedalloy>, <ore:dustOsmium>, <mekanism:enrichedalloy>], [<ore:ingotMercury>, <mekanism:enrichedalloy>, <ore:ingotMercury>], [<mekanism:enrichedalloy>, <ore:dustOsmium>, <mekanism:enrichedalloy>]]);
+
+// Turbine
+recipes.remove(<mekanismgenerators:generator:10>);
+recipes.addShaped(<mekanismgenerators:generator:10> * 4, [[<ore:plateZinc>, <thermalfoundation:material:352>, <ore:plateZinc>], [<thermalfoundation:material:352>, <ore:blockOsmium>, <ore:plateSteel>], [<ore:plateZinc>, <ore:plateSteel>, <ore:plateZinc>]]);
+recipes.remove(<mekanism:basicblock:10>);
+recipes.addShaped(<mekanism:basicblock:10>, [[<ore:blockGlassColorless>, <mekanismgenerators:generator:10>, <ore:blockGlassColorless>]]);
+
+// Induction Casing
+recipes.remove(<mekanism:basicblock2:1>);
+recipes.addShaped(<mekanism:basicblock2:1> * 4, [[<ore:plateChrome>, <ore:plateSteel>, <ore:plateChrome>], [<ore:plateSteel>, <mekanism:energytablet>, <ore:plateSteel>], [<ore:plateChrome>, <ore:plateSteel>, <ore:plateChrome>]]);
+
+// Thermal Evaporation Plant
+recipes.remove(<mekanism:basicblock2>);
+recipes.addShaped(<mekanism:basicblock2> * 4, [[<ore:plateBrass>, <ore:plateSteel>, <ore:plateBrass>], [<ore:plateSteel>, <ore:blockCopper>, <ore:plateSteel>], [<ore:plateBrass>, <ore:plateSteel>, <ore:plateBrass>]]);
+recipes.remove(<mekanism:basicblock:14>);
+recipes.addShaped(<mekanism:basicblock:14>, [[<ore:circuitAdvanced>, <ic2:te:31>, <ore:circuitAdvanced>], [<mekanism:basicblock2>, <minecraft:bucket>, <mekanism:basicblock2>], [<mekanism:basicblock2>, <deepresonance:generator_controller>, <mekanism:basicblock2>]]);
+
+// Boiler Casing
+recipes.remove(<mekanism:basicblock2:7>);
+recipes.addShaped(<mekanism:basicblock2:7> * 4, [[<ore:plateInvar>, <ore:plateSteel>, <ore:plateInvar>], [<ore:plateSteel>, <ore:blockIron>, <ore:plateSteel>], [<ore:plateInvar>, <ore:plateSteel>, <ore:plateInvar>]]);
+recipes.addShaped(<mekanism:basicblock:10>, [[<ore:blockGlassColorless>, <mekanism:basicblock2:7>, <ore:blockGlassColorless>]]);
+
+// Reactor
+recipes.remove(<mekanismgenerators:reactor:1>);
+recipes.addShaped(<mekanismgenerators:reactor:1> * 4, [[<mekanism:atomicalloy>, <mekanism:basicblock:8>, <mekanism:atomicalloy>], [<mekanism:basicblock:8>, <techreborn:fusion_coil>, <mekanism:basicblock:8>], [<ore:ingotTungstensteel>, <mekanism:basicblock:8>, <ore:ingotTungstensteel>]]);
+recipes.remove(<mekanismgenerators:reactor>);
+recipes.addShaped(<mekanismgenerators:reactor>, [[<mekanism:controlcircuit:3>, <mekanism:energycube>.withTag({tier: 3}), <mekanism:controlcircuit:3>], [<mekanismgenerators:reactor:1>, <mekanism:gastank>, <mekanismgenerators:reactor:1>], [<mekanismgenerators:reactor:1>, <techreborn:fusion_control_computer>, <mekanismgenerators:reactor:1>]]);
+
+// Laser
+recipes.remove(<mekanism:machineblock2:13>);
+recipes.addShaped(<mekanism:machineblock2:13>, [[<mekanism:reinforcedalloy>, <mekanism:energytablet>, null], [<deepresonance:laser>, <mekanism:basicblock:8>, <actuallyadditions:block_laser_relay_extreme>], [<mekanism:reinforcedalloy>, <mekanism:energytablet>, null]]);
+
+// Ores 4x and 5x
+recipes.remove(<mekanism:machineblock2:3>);
+recipes.addShaped(<mekanism:machineblock2:3>, [[<mekanism:reinforcedalloy>, <ore:circuitElite>, <mekanism:reinforcedalloy>], [<ore:ingotChrome>, <mekanism:machineblock:9>, <ore:ingotChrome>], [<mekanism:reinforcedalloy>, <ore:circuitElite>, <mekanism:reinforcedalloy>]]);
+recipes.remove(<mekanism:machineblock2:8>);
+recipes.addShaped(<mekanism:machineblock2:8>, [[<ore:circuitUltimate>, <mekanism:gastank>, <ore:circuitUltimate>], [<mekanism:atomicalloy>, <mekanism:basicblock:8>, <mekanism:atomicalloy>], [<ore:ingotTungstensteel>, <mekanism:gastank>, <ore:ingotTungstensteel>]]);
+
+// Digital Miner
+recipes.remove(<mekanism:machineblock:4>);
+recipes.addShaped(<mekanism:machineblock:4>, [[<extrautils2:quarryproxy>, <extrautils2:quarry>, <extrautils2:quarryproxy>], [<extrautils2:quarryproxy>, <mekanism:robit>, <extrautils2:quarryproxy>], [<mekanism:teleportationcore>, <mekanism:basicblock:8>, <mekanism:teleportationcore>]]);
+
+// Teleportation Core
+recipes.remove(<mekanism:teleportationcore>);
+recipes.addShaped(<mekanism:teleportationcore>, [[<ore:gemLapis>, <mekanism:atomicalloy>, <ore:gemLapis>], [<ore:ingotRefinedGlowstone>, <forestry:crafting_material:1>, <ore:ingotRefinedGlowstone>], [<ore:gemLapis>, <mekanism:atomicalloy>, <ore:gemLapis>]]);
+
+// Atomic Disassembler
+recipes.remove(<mekanism:atomicdisassembler>);
+recipes.addShaped(<mekanism:atomicdisassembler>, [[<mysticalagradditions:inferium_paxel>, <mekanism:energytablet>, <mysticalagradditions:inferium_paxel>], [<mekanism:reinforcedalloy>, <mekanism:atomicalloy>, <mekanism:reinforcedalloy>], [null, <ore:ingotRefinedObsidian>, null]]);
+
+// Circuit
+recipes.remove(<mekanism:controlcircuit:1>);
+recipes.addShaped(<mekanism:controlcircuit:1>, [[null, <ore:plateTantalum>, null], [<mekanism:enrichedalloy>, <mekanism:controlcircuit>, <mekanism:enrichedalloy>], [null, <ore:plateTantalum>, null]]);
+recipes.remove(<mekanism:controlcircuit:2>);
+recipes.addShaped(<mekanism:controlcircuit:2>, [[null, <ore:plateTantalum>, null], [<mekanism:reinforcedalloy>, <mekanism:controlcircuit:1>, <mekanism:reinforcedalloy>], [null, <ore:plateTantalum>, null]]);
+recipes.remove(<mekanism:controlcircuit:3>);
+recipes.addShaped(<mekanism:controlcircuit:3>, [[null, <ore:plateTantalum>, null], [<mekanism:atomicalloy>, <mekanism:controlcircuit:2>, <mekanism:atomicalloy>], [null, <ore:plateTantalum>, null]]);
