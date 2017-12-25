@@ -1,0 +1,81 @@
+print("Thermal Mods");
+
+// Remove thermal's coal coke recipe
+recipes.remove(<thermalfoundation:material:802>);
+
+// Fixs blocks into ingots
+recipes.addShapeless(<thermalfoundation:material:129> * 9, [<thermalfoundation:storage:1>]);
+recipes.addShapeless(<thermalfoundation:material:128> * 9, [<ore:blockCopper>]);
+
+// Gears
+//iron gear
+recipes.remove(<ore:gearIron>);
+recipes.addShaped(<ore:gearIron>, [[null, <minecraft:iron_ingot>, null], [<minecraft:iron_ingot>, <techreborn:ingot:17>, <minecraft:iron_ingot>], [null, <minecraft:iron_ingot>, null]]);
+// gold gear
+recipes.remove(<ore:gearGold>);
+recipes.addShaped(<ore:gearGold>, [[null, <minecraft:gold_ingot>, null], [<minecraft:gold_ingot>, <techreborn:ingot:17>, <minecraft:gold_ingot>], [null, <minecraft:gold_ingot>, null]]);
+// copper gear
+recipes.remove(<ore:gearCopper>);
+recipes.addShaped(<ore:gearCopper>, [[null, <thermalfoundation:material:128>, null], [<thermalfoundation:material:128>, <techreborn:ingot:17>, <thermalfoundation:material:128>], [null, <thermalfoundation:material:128>, null]]);
+// Tin Gear
+recipes.remove(<ore:gearTin>);
+recipes.addShaped(<ore:gearTin>, [[null, <thermalfoundation:material:129>, null], [<thermalfoundation:material:129>, <techreborn:ingot:17>, <thermalfoundation:material:129>], [null, <thermalfoundation:material:129>, null]]);
+// Silver Gear
+recipes.remove(<ore:gearSilver>);
+recipes.addShaped(<ore:gearSilver>, [[null, <ore:ingotSilver>, null], [<ore:ingotSilver>, <ore:ingotTungstensteel>, <ore:ingotSilver>], [null, <ore:ingotSilver>, null]]);
+// lead gear
+recipes.remove(<ore:gearLead>);
+recipes.addShaped(<ore:gearLead>, [[null, <thermalfoundation:material:131>, null], [<thermalfoundation:material:131>, <techreborn:ingot:17>, <thermalfoundation:material:131>], [null, <thermalfoundation:material:131>, null]]);
+// nickel gear
+recipes.remove(<ore:gearNickel>);
+recipes.addShaped(<ore:gearNickel>, [[null, <thermalfoundation:material:133>, null], [<thermalfoundation:material:133>, <techreborn:ingot:17>, <thermalfoundation:material:133>], [null, <thermalfoundation:material:133>, null]]);
+// Lumium gear
+recipes.remove(<ore:gearLumium>);
+recipes.addShaped(<ore:gearLumium>, [[null, <thermalfoundation:material:166>, null], [<thermalfoundation:material:166>, <techreborn:ingot:17>, <thermalfoundation:material:166>], [null, <thermalfoundation:material:166>, null]]);
+// enderium gear
+recipes.remove(<ore:gearEnderium>);
+recipes.addShaped(<ore:gearEnderium>, [[null, <thermalfoundation:material:167>, null], [<thermalfoundation:material:167>, <techreborn:ingot:17>, <thermalfoundation:material:167>], [null, <thermalfoundation:material:167>, null]]);
+// Constantan gear
+recipes.remove(<ore:gearConstantan>);
+recipes.addShaped(<ore:gearConstantan>, [[null, <thermalfoundation:material:164>, null], [<thermalfoundation:material:164>, <techreborn:ingot:17>, <thermalfoundation:material:164>], [null, <thermalfoundation:material:164>, null]]);
+// signalum gear
+recipes.remove(<ore:gearSignalum>);
+recipes.addShaped(<ore:gearSignalum>, [[null, <thermalfoundation:material:165>, null], [<thermalfoundation:material:165>, <techreborn:ingot:17>, <thermalfoundation:material:165>], [null, <thermalfoundation:material:165>, null]]);
+// bronze gear
+recipes.remove(<ore:gearBronze>);
+recipes.addShaped(<ore:gearBronze>, [[null, <thermalfoundation:material:163>, null], [<thermalfoundation:material:163>, <techreborn:ingot:17>, <thermalfoundation:material:163>], [null, <thermalfoundation:material:163>, null]]);
+// steel gear
+recipes.remove(<ore:gearSteel>);
+recipes.addShaped(<ore:gearSteel>, [[null, <ore:ingotSteel>, null], [<ore:ingotSteel>, <techreborn:ingot:17>, <ore:ingotSteel>], [null, <ore:ingotSteel>, null]]);
+// electrum gear
+recipes.remove(<ore:gearElectrum>);
+recipes.addShaped(<ore:gearElectrum>, [[null, <thermalfoundation:material:161>, null], [<thermalfoundation:material:161>, <techreborn:ingot:17>, <thermalfoundation:material:161>], [null, <thermalfoundation:material:161>, null]]);
+// invar gear
+recipes.remove(<ore:gearInvar>);
+recipes.addShaped(<ore:gearInvar>, [[null, <thermalfoundation:material:162>, null], [<thermalfoundation:material:162>, <techreborn:ingot:17>, <thermalfoundation:material:162>], [null, <thermalfoundation:material:162>, null]]);
+
+// Redstone Servo
+recipes.remove(<thermalfoundation:material:512>);
+recipes.addShaped(<thermalfoundation:material:512>, [[<calculator:redstoneingot>, null, <calculator:redstoneingot>], [null, <ore:ingotIron>, null], [<calculator:redstoneingot>, null, <calculator:redstoneingot>]]);
+
+// Redstone Coils
+// Reception coil
+recipes.remove(<thermalfoundation:material:513>);
+recipes.addShaped(<thermalfoundation:material:513>, [[null, null, <minecraft:gold_ingot>], [null, <calculator:redstoneingot>, null], [<minecraft:gold_ingot>, null, null]]);
+//transmission coil
+recipes.remove(<thermalfoundation:material:514>);
+recipes.addShaped(<thermalfoundation:material:514>, [[null, null, <thermalfoundation:material:130>], [null, <calculator:redstoneingot>, null], [<thermalfoundation:material:130>, null, null]]);
+//conductance coil
+recipes.remove(<thermalfoundation:material:515>);
+recipes.addShaped(<thermalfoundation:material:515>, [[<thermalfoundation:material:161>, null, null], [null, <calculator:redstoneingot>, null], [null, null, <thermalfoundation:material:161>]]);
+
+// Frames
+// machine frame
+recipes.remove(<thermalexpansion:frame>);
+recipes.addShaped(<thermalexpansion:frame>, [[<ore:ingotSteel>, <appliedenergistics2:quartz_glass>, <ore:ingotSteel>], [<appliedenergistics2:quartz_glass>, <ore:gearTin>, <appliedenergistics2:quartz_glass>], [<ore:ingotSteel>, <appliedenergistics2:quartz_glass>, <thermalfoundation:material:160>]]);
+// device frame
+recipes.remove(<thermalexpansion:frame:64>);
+recipes.addShaped(<thermalexpansion:frame:64>, [[<thermalfoundation:material:160>, <appliedenergistics2:quartz_glass>, <thermalfoundation:material:160>], [<appliedenergistics2:quartz_glass>, <thermalfoundation:material:256>, <appliedenergistics2:quartz_glass>], [<thermalfoundation:material:160>, <appliedenergistics2:quartz_glass>, <thermalfoundation:material:160>]]);
+// energy cell frame
+recipes.remove(<thermalexpansion:frame:128>);
+recipes.addShaped(<thermalexpansion:frame:128>, [[<thermalfoundation:material:160>, <appliedenergistics2:quartz_glass>, <thermalfoundation:material:160>], [<appliedenergistics2:quartz_glass>, <thermalfoundation:material:259>, <appliedenergistics2:quartz_glass>], [<thermalfoundation:material:160>, <appliedenergistics2:quartz_glass>, <thermalfoundation:material:160>]]);
