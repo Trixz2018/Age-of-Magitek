@@ -1,0 +1,100 @@
+print("AA");
+
+// Make Crate more expensive
+recipes.remove(<actuallyadditions:block_giant_chest>);
+recipes.addShaped(<actuallyadditions:block_giant_chest>, [[<minecraft:chest>, <ic2:plate:11>, <minecraft:chest>], [<ore:gemDiamond>, <actuallyadditions:block_misc:4>, <ore:gemDiamond>], [<minecraft:chest>, <ic2:plate:12>, <minecraft:chest>]]);
+
+// Iron Casing needs IC2 Casing
+recipes.remove(<actuallyadditions:block_misc:9>);
+recipes.addShaped(<actuallyadditions:block_misc:9>, [[<ore:ingotIron> , <actuallyadditions:item_misc:5>, <ore:ingotIron>], [<actuallyadditions:item_misc:5>, <ic2:resource:12>, <actuallyadditions:item_misc:5>], [<ore:ingotIron> , <actuallyadditions:item_misc:5>, <ore:ingotIron>]]);
+
+// Coal Generator needs Calculator
+recipes.remove(<actuallyadditions:block_coal_generator>);
+recipes.addShaped(<actuallyadditions:block_coal_generator>, [[<sonarcore:reinforcedstoneblock>, <ore:fuelCoke>, <sonarcore:reinforcedstoneblock>], [<sonarcore:reinforcedstoneblock>, <actuallyadditions:block_misc:9>, <sonarcore:reinforcedstoneblock>], [<sonarcore:reinforcedstoneblock>, <ore:fuelCoke>, <sonarcore:reinforcedstoneblock>]]);
+
+// Atomic Reconstructor needs Calculator
+recipes.remove(<actuallyadditions:block_atomic_reconstructor>);
+recipes.addShaped(<actuallyadditions:block_atomic_reconstructor>, [[<calculator:reinforcedironingot>, <calculator:enrichedgoldingot>, <calculator:reinforcedironingot>], [<calculator:enrichedgoldingot>, <actuallyadditions:block_misc:9>, <calculator:enrichedgoldingot>], [<calculator:reinforcedironingot>, <calculator:enrichedgoldingot>, <calculator:reinforcedironingot>]]);
+
+// ESD
+recipes.remove(<actuallyadditions:block_inputter>);
+recipes.addShaped(<actuallyadditions:block_inputter>, [[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>], [<actuallyadditions:block_misc:4>, <minecraft:hopper>, <actuallyadditions:block_misc:4>], [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>]]);
+
+// Battery
+recipes.remove(<actuallyadditions:item_battery>);
+recipes.addShaped(<actuallyadditions:item_battery>, [[null, <calculator:energymodule>, null], [<actuallyadditions:item_crystal:5>, <actuallyadditions:item_misc:8>, <actuallyadditions:item_crystal:5>], [<actuallyadditions:item_crystal:5>, <actuallyadditions:item_crystal:5>, <actuallyadditions:item_crystal:5>]]);
+
+// Empowerer Tooltip
+
+// Remove Prismarine Recipe
+// mods.actuallyadditions.AtomicReconstructor.remove(<minecraft:quartz>);
+
+// Empowerer Recipes
+mods.actuallyadditions.Empowerer.removeRecipe(<actuallyadditions:block_crystal_empowered>);
+mods.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:block_crystal_empowered>, <actuallyadditions:block_crystal>, <extrautils2:ingredients>, <minecraft:dye:1>, <tconstruct:ingots:1>, <techreborn:gem:3>, 1000000, 1000, [1, 0, 0]);
+<actuallyadditions:block_crystal_empowered>.addTooltip(format.red("(* requires 4M RF to make)"));
+
+mods.actuallyadditions.Empowerer.removeRecipe(<actuallyadditions:item_crystal_empowered>);
+mods.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:item_crystal_empowered>, <actuallyadditions:item_crystal>, <extrautils2:ingredients>, <minecraft:dye:1>, <tconstruct:ingots:1>, <techreborn:gem:3>, 100000, 100, [1, 0, 0]);
+<actuallyadditions:item_crystal_empowered>.addTooltip(format.red("(* requires 400k RF to make)"));
+
+mods.actuallyadditions.Empowerer.removeRecipe(<actuallyadditions:block_crystal_empowered:1>);
+mods.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:block_crystal_empowered:1>, <actuallyadditions:block_crystal:1>, <minecraft:fish>, <minecraft:prismarine_shard>, <tconstruct:ingots>, <tconstruct:materials:10>, 2000000 , 2000, [0, 0, 1]);
+<actuallyadditions:block_crystal_empowered:1>.addTooltip(format.red("(* requires 8M RF to make)"));
+
+mods.actuallyadditions.Empowerer.removeRecipe(<actuallyadditions:item_crystal_empowered:1>);
+mods.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:item_crystal_empowered:1>, <actuallyadditions:item_crystal:1>, <minecraft:fish>, <minecraft:prismarine_shard>, <tconstruct:ingots>, <tconstruct:materials:10>, 200000, 200, [0, 0, 1]);
+<actuallyadditions:item_crystal_empowered:1>.addTooltip(format.red("(* requires 800k RF to make)"));
+
+mods.actuallyadditions.Empowerer.removeRecipe(<actuallyadditions:block_crystal_empowered:2>);
+mods.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:block_crystal_empowered:2>,<actuallyadditions:block_crystal:2>, <forestry:ash>, <bigreactors:minerals:1>, <forestry:fertilizer_compound>, <ic2:dust:11>, 5000000, 5000, [0, 0.2, 1]);
+<actuallyadditions:block_crystal_empowered:2>.addTooltip(format.red("(* requires 20M RF to make)"));
+
+mods.actuallyadditions.Empowerer.removeRecipe(<actuallyadditions:item_crystal_empowered:2>);
+mods.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:item_crystal_empowered:2>, <actuallyadditions:item_crystal:2>, <forestry:ash>, <bigreactors:minerals:1>, <forestry:fertilizer_compound>, <ic2:dust:11>, 500000, 500, [0, 0.2, 1]);
+<actuallyadditions:item_crystal_empowered:2>.addTooltip(format.red("(* requires 2M RF to make)"));
+
+mods.actuallyadditions.Empowerer.removeRecipe(<actuallyadditions:block_crystal_empowered:3>);
+mods.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:block_crystal_empowered:3>, <actuallyadditions:block_crystal:3>, <actuallyadditions:item_misc:5>, <immersiveengineering:material:6>, <tconstruct:materials:17>, <minecraft:dye>, 3000000, 3000, [0, 0, 0]);
+<actuallyadditions:block_crystal_empowered:3>.addTooltip(format.red("(* requires 12M RF to make)"));
+
+mods.actuallyadditions.Empowerer.removeRecipe(<actuallyadditions:item_crystal_empowered:3>);
+mods.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:item_crystal_empowered:3>, <actuallyadditions:item_crystal:3>, <actuallyadditions:item_misc:5>, <immersiveengineering:material:6>, <tconstruct:materials:17>, <minecraft:dye>, 300000, 300, [0, 0, 0]);
+<actuallyadditions:item_crystal_empowered:3>.addTooltip(format.red("(* requires 1.2M RF to make)"));
+
+mods.actuallyadditions.Empowerer.removeRecipe(<actuallyadditions:block_crystal_empowered:4>);
+mods.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:block_crystal_empowered:4>, <actuallyadditions:block_crystal:4>, <minecraft:cactus>, <ic2:nuclear:2>, <calculator:cookedbroccoli>, <tconstruct:materials:9>, 6000000, 6000, [0, 1, 0]);
+<actuallyadditions:block_crystal_empowered:4>.addTooltip(format.red("(* requires 24M RF to make)"));
+
+mods.actuallyadditions.Empowerer.removeRecipe(<actuallyadditions:item_crystal_empowered:4>);
+mods.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:item_crystal_empowered:4>, <actuallyadditions:item_crystal:4>, <minecraft:cactus>, <ic2:nuclear:2>, <calculator:cookedbroccoli>, <tconstruct:materials:9>, 600000, 600, [0, 1, 0]);
+<actuallyadditions:item_crystal_empowered:4>.addTooltip(format.red("(* requires 2.4M RF to make)"));
+
+mods.actuallyadditions.Empowerer.removeRecipe(<actuallyadditions:block_crystal_empowered:5>);
+mods.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:block_crystal_empowered:5>, <actuallyadditions:block_crystal:5>, <minecraft:snow>, <ic2:dust:15>, <minecraft:bone_block>, <minecraft:ghast_tear>, 4000000, 4000, [1, 1, 1]);
+<actuallyadditions:block_crystal_empowered:5>.addTooltip(format.red("(* requires 16M RF to make)"));
+
+mods.actuallyadditions.Empowerer.removeRecipe(<actuallyadditions:item_crystal_empowered:5>);
+mods.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:item_crystal_empowered:5>, <actuallyadditions:item_crystal:5>, <minecraft:snow>, <ic2:dust:15>, <minecraft:bone_block>, <minecraft:ghast_tear>, 400000, 400, [1, 1, 1]);
+<actuallyadditions:item_crystal_empowered:5>.addTooltip(format.red("(requires 1.6M RF to make)"));
+
+// Farmer Recipe
+recipes.remove(<actuallyadditions:block_farmer>);
+recipes.addShaped(<actuallyadditions:block_farmer>, [[<actuallyadditions:block_crystal:5>, <actuallyadditions:item_misc:24>, <actuallyadditions:block_crystal:5>], [<actuallyadditions:block_misc:9>, <calculator:advancedgreenhouse>, <actuallyadditions:block_misc:9>], [<actuallyadditions:block_crystal:5>, <actuallyadditions:item_misc:24>, <actuallyadditions:block_crystal:5>]]);
+
+// Oil Generator Recipe
+recipes.remove(<actuallyadditions:block_oil_generator>);
+recipes.addShaped(<actuallyadditions:block_oil_generator>, [[<sonarcore:reinforcedstoneblock>, <actuallyadditions:block_misc:9>, <sonarcore:reinforcedstoneblock>], [<sonarcore:reinforcedstoneblock>, <actuallyadditions:item_misc:24>, <sonarcore:reinforcedstoneblock>], [<sonarcore:reinforcedstoneblock>, <actuallyadditions:block_misc:9>, <sonarcore:reinforcedstoneblock>]]);
+recipes.addShapeless(<actuallyadditions:block_oil_generator>, [<actuallyadditions:block_oil_generator>] );
+
+// Advanced Coil
+recipes.remove(<actuallyadditions:item_misc:8>);
+recipes.addShaped(<actuallyadditions:item_misc:8>, [[<ic2:cable:2>.withTag({type: 2 as byte, insulation: 0 as byte}), <ic2:cable:2>.withTag({type: 2 as byte, insulation: 0 as byte}), <ic2:cable:2>.withTag({type: 2 as byte, insulation: 0 as byte})], [<ic2:cable:2>.withTag({type: 2 as byte, insulation: 0 as byte}), <actuallyadditions:item_misc:7>, <ic2:cable:2>.withTag({type: 2 as byte, insulation: 0 as byte})], [<ic2:cable:2>.withTag({type: 2 as byte, insulation: 0 as byte}), <ic2:cable:2>.withTag({type: 2 as byte, insulation: 0 as byte}), <ic2:cable:2>.withTag({type: 2 as byte, insulation: 0 as byte})]]);
+
+// Ring of Growth
+recipes.remove(<actuallyadditions:item_growth_ring>);
+recipes.addShaped(<actuallyadditions:item_growth_ring>, [[<forestry:fruits:3>, <actuallyadditions:item_crystal_empowered:5>, <forestry:fruits:6>], [<actuallyadditions:item_crystal_empowered:5>, <actuallyadditions:item_misc:6>, <actuallyadditions:item_crystal_empowered:5>], [<forestry:fruits:5>, <actuallyadditions:item_crystal_empowered:5>, <forestry:fruits:4>]]);
+
+// Make Lava Factory cheaper as you can't use lava for power anyway
+recipes.remove(<actuallyadditions:block_lava_factory_controller>);
+recipes.addShaped(<actuallyadditions:block_lava_factory_controller>, [[<actuallyadditions:item_misc:8>, <actuallyadditions:block_misc:9>, <actuallyadditions:item_misc:8>], [<actuallyadditions:block_crystal:5>, <actuallyadditions:item_misc:8>, <actuallyadditions:block_crystal:5>], [<minecraft:lava_bucket>, <minecraft:lava_bucket>, <minecraft:lava_bucket>]]);
